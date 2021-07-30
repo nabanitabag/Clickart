@@ -52,7 +52,7 @@ const userSchema = mongoose.Schema(
   },
 );
 
-// TODO: CRIO_TASK_MODULE_UNDERSTANDING_BASICS - Implement the isEmailTaken() static method
+// Implement the isEmailTaken() static method
 /**
  * Check if email is taken
  * @param {string} email - The user's email
@@ -105,8 +105,6 @@ userSchema.methods.isPasswordMatch = async function (newpassword) {
  * const { User } = require("<user.model file path>");
 userSchema.methods.isPasswordMatch = async function (password) {
 };
-
-
 
 /*
  * Create a Mongoose model out of userSchema and export the model as "User"

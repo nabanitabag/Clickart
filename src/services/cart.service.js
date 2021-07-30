@@ -3,7 +3,7 @@ const { Cart, Product } = require("../models");
 const ApiError = require("../utils/ApiError");
 const config = require("../config/config");
 
-// TODO: CRIO_TASK_MODULE_CART - Implement the Cart service methods
+// Implement the Cart service methods
 /**
  * Fetches cart for a user
  * - Fetch user's cart from Mongo

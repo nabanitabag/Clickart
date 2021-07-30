@@ -8,9 +8,6 @@ package-lock.json merge=copy-merge
 pnpm-lock.yaml merge=copy-merge
 setup.sh merge=copy-merge
 
-# __CRIO__
-__CRIO__/metadata.json merge=copy-merge
-
 # data/
 data/export_qkart_products.json merge=copy-merge
 data/export_qkart_users.json merge=copy-merge
