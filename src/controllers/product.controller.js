@@ -17,8 +17,6 @@ const { productService } = require("../services");
  *      "image": "google.com",
  *      "__v": 0
  * }
- *
- *
  */
 const getProductById = catchAsync(async (req, res) => {
   const product = await productService.getProductById(req.params.productId);
@@ -54,7 +52,6 @@ const getProductById = catchAsync(async (req, res) => {
  *      "__v": 0
  *  }
  *]
- *
  */
 const getProducts = catchAsync(async (req, res) => {
   const products = await productService.getProducts();
