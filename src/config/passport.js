@@ -41,7 +41,7 @@ const jwtVerify = async (payload, done) => {
           });
 };
 
-// Uncomment below lines of code once the "jwtVerify" and "jwtOptions" are implemented
+// once the "jwtVerify" and "jwtOptions" are implemented, pass them to JwtStrategy
 const jwtStrategy = new JwtStrategy(jwtOptions, jwtVerify);
 
 module.exports = {
