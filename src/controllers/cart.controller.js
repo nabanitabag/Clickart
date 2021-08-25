@@ -51,7 +51,6 @@ const addProductToCart = catchAsync(async (req, res) => {
   }
 });
 
-// Implement updateProductInCart()
 /**
  * Update product quantity in cart
  * - If updated quantity > 0, 
