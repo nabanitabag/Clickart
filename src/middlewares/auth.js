@@ -14,7 +14,6 @@ const ApiError = require("../utils/ApiError");
 
 /**
  * Auth middleware to authenticate using Passport "jwt" strategy with sessions disabled and a custom callback function
- * 
  */
 const auth =()=> async(req, res, next) => {
 
