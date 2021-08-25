@@ -98,20 +98,13 @@ userSchema.methods.isPasswordMatch = async function (newpassword) {
     return await bcrypt.compare(newpassword, this.password);
 };
 
-/* 
- * Create a Mongoose model out of userSchema and export the model as "User"
- * Note: The model should be accessible in a different module when imported like below
- * const { User } = require("<user.model file path>");
-userSchema.methods.isPasswordMatch = async function (password) {
-};
-
 /*
  * Create a Mongoose model out of userSchema and export the model as "User"
- * Note: The model should be accessible in a different module when imported like below
+ * Note: The model is accessible in a different module when imported like below
  * const User = require("<user.model file path>").User;
  */
+
 /**
  * @typedef User
  */
-
  module.exports.User = mongoose.model("User", userSchema );
