@@ -6,7 +6,7 @@ const auth = require("../../middlewares/auth");
 
 const router = express.Router();
 
-// Implement a route definition for `/v1/users/:userId`
+// route definitions for `/v1/users/:userId`
 router.get(
   '/:userId',
   auth(), 
