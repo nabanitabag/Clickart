@@ -3,11 +3,10 @@ const { Cart, Product } = require("../models");
 const ApiError = require("../utils/ApiError");
 const config = require("../config/config");
 
-// Implement the Cart service methods
+// Implementing the Cart service methods
 /**
- * Fetches cart for a user
- * - Fetch user's cart from Mongo
- * - If cart doesn't exist, throw ApiError
+ * Fetches cart for a user from Mongo
+ * If cart doesn't exist, throw ApiError
  * --- status code  - 404 NOT FOUND
  * --- message - "User does not have a cart"
  *
